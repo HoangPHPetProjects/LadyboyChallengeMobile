@@ -1,1 +1,14 @@
 /* Empty. Add your own CSS if you like */
+.center {
+	text-align: center;
+}
+
+.banner-img {
+	width: 80%;
+}
+
+.button-menu-item {
+	width: 60%;
+	padding: 5px;
+	font-size: 120%;
+}
