@@ -1,5 +1,15 @@
-<<ion-view view-title="Ladyboy Challenge">
-  <ion-content>
-    Game
-  </ion-content>
+<ion-view>
+    <ion-nav-title>Point: {{point}}</ion-nav-title>
+    <ion-content class="center">
+        <h5>Look can be so deceiving. Find the real girl, don't get yourself fooled!!!!</h5>
+
+        <h5 ng-if="point >= 10" class="assertive" ng-bind="warning"></h5>
+        <div class="ng-hide" ng-show="showImg" id="gameDiv">
+            <div class="row responsive-sm">
+                <div ng-repeat="choice in choices" ng-click="choiceClick(choice)">
+                    <img class="padding full-image" ng-src="{{choice.image}}" />
+                </div>
+            </div>
+        </div>
+    </ion-content>
 </ion-view>

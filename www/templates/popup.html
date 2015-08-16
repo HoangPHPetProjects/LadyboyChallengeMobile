@@ -1,0 +1,25 @@
+<ion-modal-view>
+    <ion-header-bar>
+        <h1 class="title title-center">Game Over</h1>
+    </ion-header-bar>
+    <ion-content class="center">
+        <div class="list">
+            <h5>Congratulation. You got a high score!!!</h5>
+            <label class="item item-input">
+            	 <span class="input-label">Your name</span>
+                <input type="text" ng-model="player.name">
+            </label>
+            <div>
+                <button ng-click="sendScore()" class="button button-full button-menu button-royal">
+                    <i class="icon ion-trophy"></i> Submit score
+                </button>
+                 <button ng-click="replay()" class="button button-full button-menu button-royal">
+                    <i class="icon ion-heart"></i> Replay
+                </button>
+                <button ng-click="backToMenu()" class="button button-full button-menu button-royal">
+                    <i class="icon ion-navicon"></i> Main Menu
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-modal-view>

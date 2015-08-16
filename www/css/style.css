@@ -1,14 +1,58 @@
 /* Empty. Add your own CSS if you like */
+
 .center {
-	text-align: center;
+    text-align: center;
 }
 
 .banner-img {
-	width: 80%;
+    width: 80%;
 }
 
-.button-menu-item {
-	width: 60%;
-	padding: 5px;
-	font-size: 120%;
+.button-menu {
+    font-family: "YanoneKaffeesatzRegular";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 180%;
+}
+
+.button-menu i {
+    margin-right: 5px;
+}
+
+#point {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+img.padding {
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+#gameDiv {
+    -ms-opacity: 1;
+    opacity: 1;
+    display: block !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#gameDiv::-webkit-scrollbar {
+    display: none;
+}
+
+#gameDiv.ng-hide-add.ng-hide-add-active,
+#gameDiv.ng-hide-remove.ng-hide-remove-active {
+    -webkit-transition: all linear 1s;
+    -moz-transition: all linear 1s;
+    -ms-transition: all linear 1s;
+    -o-transition: all linear 1s;
+    transition: all linear 1s;
+}
+
+#gameDiv.ng-hide {
+    -ms-opacity: 0;
+    opacity: 0;
 }
