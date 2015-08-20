@@ -12,8 +12,8 @@ angular.module('starter.controllers', [])
         $scope.player = {};
         $scope.choices = [];
 
-        var bingoSound = ngAudio.load("../sound/right.wav");
-        var failSound = ngAudio.load("../sound/wrong.wav");
+        var bingoSound = ngAudio.load("https://raw.githubusercontent.com/HoangPHPetProjects/LadyboyChallengeMobile/master/www/sound/right.wav");
+        var failSound = ngAudio.load("https://raw.githubusercontent.com/HoangPHPetProjects/LadyboyChallengeMobile/master/www/sound/wrong.wav");
         failSound.volume = 0.3;
 
         var girls = [];
